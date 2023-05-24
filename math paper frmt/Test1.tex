@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx} % Required for inserting images
+
+% Set the page margins
+\geometry{
+    left=2cm,
+    right=2cm,
+    top=1.5cm,
+    bottom=2cm,
+}
+
+
+\usepackage{fancyhdr}
+% Set the page style
+\pagestyle{fancy}
+\fancyhf{} % Clear existing header/footer settings
+
+% Customize the footer
+\fancyfoot[R]{\thepage} % Place the page number in the center
+
+
+%page border
+\usepackage{tikz}%border around the page
+\usepackage{eso-pic}%put every tikz border around every page
+\usetikzlibrary{calc}
+\AddToShipoutPictureBG{%
+    \begin{tikzpicture}[overlay,remember picture]
+        \draw[line width=1.5pt]
+            ($ (current page.north west) + (1.5cm,-1.5cm) $)
+            rectangle
+            ($ (current page.south east) + (-1.5cm,1.5cm) $);
+    \end{tikzpicture}%
+}
+
+%\title{Title}
+%\author{First LastName}
+
+\begin{document}
+hello world
+
+
+
+\end{document}
