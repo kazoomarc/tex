@@ -3,8 +3,9 @@
 *.out
 *.aux
 *.fdb_latexmk
-*.f
+*.fls
+*.toc
 *.gz
 *.log
-*.out
+*.bat
 *.pdf
