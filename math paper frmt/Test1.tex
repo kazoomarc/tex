@@ -1,45 +1,162 @@
 \documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{amsthm}
+\newtheorem{question}{}
+\usepackage{enumitem}
+\usepackage{tasks}
 
 \usepackage[a4paper]{geometry}
-\usepackage{graphicx} % Required for inserting images
-
 % Set the page margins
 \geometry{
-    left=2cm,
-    right=2cm,
-    top=1.5cm,
-    bottom=2cm,
+    left=3cm,
+    right=3cm,
+    top=3cm,
+    bottom=3cm,
 }
 
-
-\usepackage{fancyhdr}
-% Set the page style
-\pagestyle{fancy}
-\fancyhf{} % Clear existing header/footer settings
-
-% Customize the footer
-\fancyfoot[R]{\thepage} % Place the page number in the center
-
-
-%page border
 \usepackage{tikz}%border around the page
 \usepackage{eso-pic}%put every tikz border around every page
 \usetikzlibrary{calc}
 \AddToShipoutPictureBG{%
     \begin{tikzpicture}[overlay,remember picture]
         \draw[line width=1.5pt]
-            ($ (current page.north west) + (1.5cm,-1.5cm) $)
-            rectangle
-            ($ (current page.south east) + (-1.5cm,1.5cm) $);
+        ($ (current page.north west) + (1.5cm,-1.5cm) $)
+        rectangle
+        ($ (current page.south east) + (-1.5cm,1.5cm) $);
+        \node at ($ (current page.north west) + (1.7cm, -2.5cm) $) [anchor=west] {Student Name: \makebox[20 em]{\dotfill}};
+        \node at ($ (current page.north east) + (-1.7cm,-2.5cm) $) [anchor=east] {Registration No.: \makebox[14 em]{\dotfill}};
+        \node at ($ (current page.south west) + (1.7cm,2cm) $) [anchor=west] {MAT123};
+        \node at ($ (current page.south) + (0cm, 2cm) $) [anchor=center] {The only way to do maths is to do maths};
+        \node at ($ (current page.south east) + (-1.7cm,2cm) $) [anchor=east] {\thepage};
     \end{tikzpicture}%
 }
 
-%\title{Title}
-%\author{First LastName}
+% Define the maximum number of dots for the registration number
+%\newcommand{\maxdots}{25}
+
+
+
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\fancyhf{} % Clear default header/footer
+%\lhead{Student Name:\makebox[20 em]{\dotfill}}
+%\rhead{Registration No.: \makebox[14 em]{\dotfill}}
+%\rfoot{\thepage}
+%\cfoot{\begin{tabular}{c}The only way to do maths is to do maths\end{tabular}}
+%\lfoot{MAT123}
+
+\usepackage{lipsum} % For placeholder text
+
+
+\title{Title}
+\author{First LastName}
 
 \begin{document}
-hello world
 
+%question 1
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
 
+%question 2
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
+
+%question 3
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
+
+%question 4
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
+
+%question 5
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
+
+%question 6
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
+
+%question 7
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
+
+%question 8
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
+
+%question 9
+\begin{question}
+    Convert the following from degree to radian measure:
+    \begin{tasks}
+        \task task1
+        \vspace{7 cm}
+        \task task1
+        \vspace{7 cm}
+    \end{tasks}
+\end{question}
 
 \end{document}
