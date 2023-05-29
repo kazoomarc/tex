@@ -4,6 +4,19 @@
 \usepackage{amssymb}
 
 \usepackage{amsthm}
+
+
+\newtheoremstyle{custom}
+    {\topsep}   % Space above
+    {\topsep}   % Space below
+    {}          % Body font (empty = "normal" font)
+    {}          % Indent amount (empty = no indent, \parindent = para indent)
+    {\bfseries} % Theorem head font
+    {.}         % Punctuation after theorem head
+    { }         % Space after theorem head
+    {}          % Theorem head spec (can be left empty, meaning `normal')
+
+\theoremstyle{custom}
 \newtheorem{question}{}
 \usepackage{enumitem}
 \usepackage{tasks}
