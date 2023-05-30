@@ -8,7 +8,7 @@
 \begin{document}
 %
 \maketitle
-
+\tableofcontents
 \section{Introduction}
 \setlength{\parskip}{0.5em} % Set the desired paragraph spacing
 \setstretch{1.5} % Set the desired line height between paragraphs
@@ -49,7 +49,23 @@ The third definition is ussually less found or used in formal context.
 -This scale of measurement apply to qaulitative type of data or categorical data.
 - The only valid operations for variables represented by norinal scale are "$=$" or "$\neq$".
 \subsection{Ordinal Scale}
+It includes all the properties of norminal scale with additinal that the observations can be ranked from the smallest to the highest r from the least important to the most important
+- Example, type of car (Salon, Lorry, Bus)
+- Although the level of car is better than the other the ranking cannot indicate how much better, the numerical values assigned to data points just indicate type/ level of a car inorder of engine performance and the difference between the numerical values are meanings Eg. Type of membership to club:
+\begin{enumerate}
+    \item Ordinary member
+    \item regular member
+    \item Executive member
+\end{enumerate}
+Both norminal and ordinal scales are termed onmetric scales because the differences among their values are of no consequeces.
 \subsection{Interval Scale}
+- It includes all properties of ordinal scale with additional property that the distance between the observations is meaningful.
+- The numbers assigned to the observations indicates order and posses the property that the difference between any two consecutive values is the same as the difference between any two other values (ie teh difference $10 - 9 = 1$ has the same meaning as $3 - 2 = 1$)
+- While this scale has a zero point, its location is arbitrary.
+- The ratios of interval scale have no meaning.
+Eg: Temperature is measured on an interval scale. $0^{\circ}C$ does not imply the absence of heat. Alsp $40^{\circ}C$ is not twice as cold as $20^{\circ}C$
+- Grades of students in Mathematics is also an example of interval scale variable. A score of $0\%$ does not imply lack of knowledge.
+- The mathematical operations for handling variables measured measured on an interval scale are "$=$", "$\neq$","$>$","$<$","$+$","$-$".
 \subsection{Ratio Scale}
 
 %end of section
@@ -112,7 +128,7 @@ solution
 \section{Measures of Symmetry}
 \subsection{Skewness}
 \textbf{Definition} An absolute frequency distribution is said to be skewed if it lacks symmetry.
-- In other words, coeficient of skeweness is a measure of symmetry of the distribution of a random variable.
+- In other words, coeficient of skewness is a measure of symmetry of the distribution of a random variable.
 - Skewness of data is measured by the pearsonian coeficient of skewness given by
 \begin{equation}
     SK_p = \frac{\mu - mode}{\delta}
@@ -140,6 +156,14 @@ if $Q_2 - Q_1 = Q_3 - Q_2$, then the distribution is symetrical.
 - if $Q_2 - Q_1 > Q_3 - Q_2$, the distribution is negatively skewed or skewed to the left.
 - if $Q_2 - Q_1 < Q_3 - Q_2$, the distribution of $X$ is skewed to the right or is positively skewed.
 \subsection{Kurtosis}
+- Kurtosis refers to how flat or sharp the peak of the absolute frequency distribution happens to be.
+- Both quantities are independent if units or dimensionless.
+- The coeficient of kurtosis is estimated by
+\begin{equation}
+    K = \frac{\frac{(Q_3 - Q_1)}{2} }{P_90 - P_10}
+\end{equation}
+
+where the numerator $QD = \frac{(Q_3 - Q_1)}{2}$ is called quartile deviation, which measures half the distance between the 1st and 3rd quartiles. While $P_90$ is $90^{th}$ percentile and $P_10$ is $10^{th}$ percentile.
 
 \hbox{\includegraphics[width=\textwidth]{kurtosis.png}}
 \end{document}
