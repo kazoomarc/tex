@@ -111,7 +111,35 @@ solution
 %end of section
 \section{Measures of Symmetry}
 \subsection{Skewness}
+\textbf{Definition} An absolute frequency distribution is said to be skewed if it lacks symmetry.
+- In other words, coeficient of skeweness is a measure of symmetry of the distribution of a random variable.
+- Skewness of data is measured by the pearsonian coeficient of skewness given by
+\begin{equation}
+    SK_p = \frac{\mu - mode}{\delta}
+\end{equation}
+- If the mode cannot be readily determined then we may employ a relationship among the mean, median and mode, given by
+\begin{equation}
+    \mu - mode = 3(\mu - median)
+\end{equation}
+to obtain
+\begin{equation}
+    SK_p = \frac{3(\mu - median)}{\delta}
+\end{equation}
+- For sample data, we can use $SK_p = \frac{3(\mu - median)}{\delta}$
+
+- When $SK_p = 0$, it means $X_s^{'}$ absolute frequency distribution is symetrical aboute the mean
+- when $SK_p > 0$ it implies that the distribution of $X$ is skewed to the right ie. It has a longer tail on the right hand side of mean.
+- when $SK_p < 0$ it means that the distribution of $X$ is skewed to the left ie. It has a longer tail on the left hand side of mean compared to the right.
+
+\hbox{\includegraphics[width=\textwidth]{measure-of-skewness.jpg}}
+- An alternative formula for computing skewness is through Quartiles. The Bowley's Coefiecient of skewness is given by
+\begin{equation}
+    SK_b = \frac{(Q_3 - Q_2)-(Q_2 - Q_1)}{Q_3 - Q_1}
+\end{equation}
+if $Q_2 - Q_1 = Q_3 - Q_2$, then the distribution is symetrical.
+- if $Q_2 - Q_1 > Q_3 - Q_2$, the distribution is negatively skewed or skewed to the left.
+- if $Q_2 - Q_1 < Q_3 - Q_2$, the distribution of $X$ is skewed to the right or is positively skewed.
 \subsection{Kurtosis}
 
-
+\hbox{\includegraphics[width=\textwidth]{kurtosis.png}}
 \end{document}
