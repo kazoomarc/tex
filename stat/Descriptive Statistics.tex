@@ -163,16 +163,20 @@ Solution:
 $n = 20$
 
 \begin{enumerate}
-    \item[(a)]50th Percentile \\ $P_{th}$ percentile $= \frac{(n + 1)p}{100}$
+    \item[(a)]50th Percentile \\ $P_{th}$ percentile $= \frac{(n + 1)p}{100}$\\
     $therefore$ $50_{th}$ $= \frac{(20 + 1)50}{100}$
     $= 10.5$
 
     The value at position $10.5$ is the same as the value at the middle of positions $10$ and $11$, which is the average of $16$ and $16$
 
-    -Hence $50_{th}$ percentile is $16$
+    Hence $50_{th}$ percentile is $16$
 
     Interpretation: This implies that $50\%$ of the given data points are below the value.
-    \item[(b)] 80th Percentile
+    \item[(b)] 80th Percentile = $\frac{(20 + 1)\times 80}{100}$ \\ $= 16.8$
+
+        The $16$th observation is $19$ and observation at position $17$ is $20$. Therefore $80$th percentile is a point lying $0.8$ of the way from $19$ to $20$, that is $19.8$
+
+        Interpretetion: The $80$th value of 19.8 means that $80\%$ of the dat are below $19.8$
 \end{enumerate}
 
 \subsection{Quartiles}
@@ -218,19 +222,34 @@ The outliers can be identified by the following formulae:
 \section{Measures of Central Tendancy}
 
 \subsection{Median}
+The median is a measure of location or centrality of the observations, at $50$th percentile or second qaurtile.
+
+other commonly used measures of central tendency are mode and mean.
 \subsection{Mode}
+The mode of the data set is the value that occurs most.
 \subsection{Mean}
+
+\textbf{Definition: }If $X$ is a sample of data from some population and if the sample size is $n$ then,
+
 
 \begin{equation}
     \bar{x} = \frac{\sum_{i = 1}^{n} x_i}{n}= \frac{x_1 + x_2 + x_3 + \ldots + x_n}{n}
 \end{equation}
 
+Is called sample mean, when $x$ are called sample observation ($x \implies$ variable, $x \impliedby$ value)
 
+\textbf{Definition: }If $x$ is av= variable for the population of data where at total population has $N$ observations and $x$, are measurements for each individual then;
 \begin{equation}
     \mu = \frac{\sum_{i = 1}^{N} x_i}{N}= \frac{x_1 + x_2 + x_3 + \ldots + x_N}{N}
 \end{equation}
 
+eg: For the dataset we used in previous example.
 
+Median = 16
+mode  = 16
+mean = $\bar{x} = \frac{1}{20}\sum_{i = 0}^{20} x_i = \frac{(6 + 9 + 10 + 12 +13 + 14 + 14 +15 + 16 +16 + 16 + 17 + 17 + 18 + 18 + 19 + 20 + 21 + 22 + 24)}{20}$
+
+Interpretation: The distribution is concentrated around value $15.85$
 %end of section
 
 \section{Measures of Variability / Dispersion}
