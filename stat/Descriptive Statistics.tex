@@ -5,7 +5,8 @@
 \usepackage{amsmath}
 \usepackage{hyperref} % for links in tableofcontents and browser
 \usepackage{float} %H specifier in table
-
+\usepackage{xcolor}
+%\definecolor{vblue}{HTML}{2660A4}
 \usepackage[]{geometry}
 % Set the page margins
 \geometry{
@@ -35,7 +36,7 @@
 
 \newpage
 
-\section{Introduction}
+\section{Introduction} %!SECTION
 \setlength{\parskip}{0.5em} % Set the desired paragraph spacing
 \setstretch{1.5} % Set the desired line height between paragraphs
 def 1: \textbf{Statistics} is the science of theory and methods of collection, organisation, analysis and interpretation of data sets so as to dertermine their essential characteristics.
@@ -53,7 +54,7 @@ The third definition is ussually less found or used in formal context.
 \newpage
 %end of section
 
-\section{Types of statistics}
+\section{Types of statistics} %!SECTION
 \subsection{Descriptive statistics}
 Includes any treatment of data designed to summarize their essential features.
 
@@ -61,8 +62,8 @@ Interest is in arranging data in readable form eg using tables, charts and graph
 
 The aim of such task is to understand the data at hand and not beyond.
 
-\subsection{Inferential or inductive statistics}is concerned with making estimates, predictions or forecasts and generalization.
-
+\subsection{Inferential or inductive statistics}
+is concerned with making estimates, predictions or forecasts and generalization.
 It is  a process of infering something about the whole from an examination of only a part.
 
 This process is carried out through sampling ie. using representative subgroup of items and conclude about the entire group/ population
@@ -73,7 +74,7 @@ Hence a measure of uncertainity of the surface made most accompanying in general
 \newpage
 %end of section
 
-\section{Scales of Measurement}
+\section{Scales of Measurement}%!SECTION
 
 \subsection{Norminal Scale}
 It is associated with the word "name" and it identifies categories of data.
@@ -101,12 +102,12 @@ Both norminal and ordinal scales are termed onmetric scales because the differen
 \subsection{Interval Scale}
 It includes all properties of ordinal scale with additional property that the distance between the observations is meaningful.
 
-The numbers assigned to the observations indicates order and posses the property that the difference between any two consecutive values is the same as the difference between any two other values (ie teh difference $10 - 9 = 1$ has the same meaning as $3 - 2 = 1$)
+The numbers assigned to the observations indicates order and posses the property that the difference between any two consecutive values is the same as the difference between any two other values (ie the difference $10 - 9 = 1$ has the same meaning as $3 - 2 = 1$)
 
 While this scale has a zero point, its location is arbitrary.
 
 The ratios of interval scale have no meaning.
-Eg: Temperature is measured on an interval scale. $0^{\circ}C$ does not imply the absence of heat. Alsp $40^{\circ}C$ is not twice as cold as $20^{\circ}C$
+Eg: Temperature is measured on an interval scale. $0^{\circ}C$ does not imply the absence of heat. Also $40^{\circ}C$ is not twice as cold as $20^{\circ}C$
 
 Grades of students in Mathematics is also an example of interval scale variable. A score of $0\%$ does not imply lack of knowledge.
 
@@ -120,13 +121,13 @@ mathematical operations permitted under this scale are :
 
 "$=$", "$\neq$","$>$","$<$","$+$","$-$", "$\times$", "$\div$"
 
-Both Interval and ratio scales are callled metric scales (since the difference between values are meaningful)
+Both Interval and ratio scales are called metric scales (since the difference between values are meaningful)
 
 Variables of these scales are quantitative.
 \newpage
 %end of section
 
-\section{Measures of Position}
+\section{Measures of Position}%!SECTION
 
 \subsection{Percentiles}
 The $P_{th}$ percentile of a group of numbers is that value below which lies $P\%$ (P percent) of the numbers in the group.
@@ -136,7 +137,7 @@ The Position of the $P_{th}$ percentile is given by
     P_{th} = \frac{(n+1)p}{100}
 \end{equation}
 
-When $n$ is the number of data points.
+Where $n$ is the number of data points.
 
 Example:
 
@@ -179,7 +180,7 @@ $n = 20$
 
     Hence $50_{th}$ percentile is $16$
 
-    Interpretation: This implies that $50\%$ of the given data points are below the value.
+    Interpretation: This implies that $50\%$ of the given data points are below the value $16$.
     \item[(b)] 80th Percentile = $\frac{(20 + 1)\times 80}{100}$ \\ $= 16.8$
 
         The $16$th observation is $19$ and observation at position $17$ is $20$. Therefore $80$th percentile is a point lying $0.8$ of the way from $19$ to $20$, that is $19.8$
@@ -190,44 +191,68 @@ $n = 20$
 \subsection{Quartiles}
 Quartiles are the percentage points that break down the dataset into quarters.
 
-First quarter, Second quarter, third quarter and fourth quarter
+First quarter, Second quarter, third quarter and fourth quarter.
 
-The first Quartile is the 25th percentile. It is tehe point below whil=ch lie one-fourth of the data.
+The first Quartile is the 25th percentile. It is the point below which lie one-fourth of the data.
 
-Similary, the second quarterile is the 50th percentile. This is the most important pont and has a special name , it is the \textbf{median}
+Similary, the second quarterile is the 50th percentile. This is the most important point and has a special name , it is the \textbf{median}
 
 Definition: The median is a point below which lie half the data. it is the 50th percentile.
 
-The third quartile is the 75th percentile point, it is that point below which lie $70\%$ of the data.
+The third quartile is the 75th percentile point, it is that point below which lie $75\%$ of the data.
 
-NB: 25th percentile is called lower qaurtile, 50th percentile is called the middle quartile. 75th percentile is called the upper quartile.
+NB: 25th percentile is called lower quartile, 50th percentile is called the middle quartile. 75th percentile is called the upper quartile.
 
 Example:
 
-\subsection{Inter-Quartile Range (IQR)}
-Definition: An interquartile range (IRQ) is the difference between the first and third quartiles.
+Using data from previous example find lower, middle and Upper Quartiles
 
-The interquartile range is a measure of spread of the data.
+$Q1$ \\
+$\frac{(20 + 1)25}{100} = 5.25$
 
-IQR tells you the spread of the middle half of your distribution.
+Q1 is the value at position $5.25$ \\
+The value at position $5$ is $13$ and the one at $6$ is $14$
 
-IQR contains the {difference between} second and third quartiles  or the middle half that data
+Therefore;
 
-IQR can be used to find outliers in data.
+\begin{align*}
+    Q1 & = 13 + 0.25 *(14 - 13) \\
+    Q1 & = 13 + 0.25            \\
+    Q1 & = 13.25                \\
+\end{align*}
 
-\subsection{Outlier analysis}
+$Q2$
 
-Outlier observations are the ones that do not confirm to distribution structure of the rest of the data.
+$\frac{(20 + 1)50}{100} = 10.5$
 
-The outliers can be identified by the following formulae:
+Q1 is the value at position $10.5$ \\
+The value at position $10$ is $16$ and the one at $6$ is $16$
 
-\begin{equation}
-    < Q_1 - 1.5\text{IQR or} > Q_3 + 1.5\text{IQR}
-\end{equation}
+Therefore;
+
+\begin{align*}
+    Q2 & = 16 + 0.5 *(16 - 16) \\
+    Q2 & = 16 + 0              \\
+    Q2 & = 16                  \\
+\end{align*}
+$Q3$
+$\frac{(20 + 1)75}{100} = 15.75$
+
+Q1 is the value at position $15.75$ \\
+The value at position $15$ is $18$ and the one at $16$ is $19$
+
+Therefore;
+
+\begin{align*}
+    Q3 & = 18 + 0.75 *(19 - 18) \\
+    Q3 & = 18 + 0.75            \\
+    Q3 & = 18.75                \\
+\end{align*}
+
 \newpage
 %end of section
 
-\section{Measures of Central Tendancy}
+\section{Measures of Central Tendancy}%!SECTION
 
 \subsection{Median}
 The median is a measure of location or centrality of the observations, at $50$th percentile or second qaurtile.
@@ -246,7 +271,7 @@ The mode of the data set is the value that occurs most.
 
 Is called sample mean, when $x$ are called sample observation ($x \implies$ variable, $x \impliedby$ value)
 
-\textbf{Definition: }If $x$ is av= variable for the population of data where at total population has $N$ observations and $x$, are measurements for each individual then;
+\textbf{Definition: }If $x$ is a variable for the population of data where at total population has $N$ observations and $x$, are measurements for each individual then;
 \begin{equation}
     \mu = \frac{\sum_{i = 1}^{N} x_i}{N}= \frac{x_1 + x_2 + x_3 + \ldots + x_N}{N}
 \end{equation}
@@ -254,11 +279,11 @@ Is called sample mean, when $x$ are called sample observation ($x \implies$ vari
 eg: For the dataset we used in previous example.
 
 \begin{align*}
-    Median  & = 16                                                                                                        \\
-    mode    & = 16                                                                                                        \\
-    mean    & = \bar{x}                                                                                                   \\
-    \bar{x} & = \frac{1}{20}\sum_{i = 0}^{20} x_i                                                                         \\
-    \bar{x} & = \frac{(6 + 9 + 10 + 12 +13 + 14 + 14 +15 + 16 +16 + 16 + 17 + 17 + 18 + 18 + 19 + 20 + 21 + 22 + 24)}{20}
+    Median  & = 16                                                                                                \\
+    mode    & = 16                                                                                                \\
+    mean    & = \bar{x}                                                                                           \\
+    \bar{x} & = \frac{\sum_{i = 0}^{20}x_i }{20}                                                                  \\
+    \bar{x} & = \frac{(6 + 9 + 10 + 12 +13 + 14(2) +15 + 16(3) + 17 + 17 + 18 + 18 + 19 + 20 + 21 + 22 + 24)}{20}
 \end{align*}
 
 
@@ -267,14 +292,32 @@ Interpretation: The distribution is concentrated around value $15.85$
 \newpage
 %end of section
 
-\section{Measures of Variability / Dispersion}
+\section{Measures of Variability / Dispersion}%!SECTION
 The variance, range and interquartile range are some of the measurement of dispersion of a dataset.
 
 They quantify amount of spread of data from the central value.
 \subsection{Range}
 NOT AVAILABLE
 \subsection{Inter-Quartile Range (IQR)}
-AVAILABLE IN UPPER SCTION
+\textbf{Definition:} An interquartile range (IRQ) is the difference between the first and third quartiles.
+
+The interquartile range is a measure of spread of the data.
+
+IQR tells you the spread of the middle half of your distribution.
+
+IQR contains the {difference between} second and third quartiles  or the middle half that data
+
+IQR can be used to find outliers in data.
+
+\subsection{Outlier analysis}
+
+Outlier observations are the ones that do not confirm to distribution structure of the rest of the data.
+
+The outliers can be identified by the following formulae:
+
+\begin{equation}
+    < Q_1 - 1.5\text{IQR or} > Q_3 + 1.5\text{IQR}
+\end{equation}
 \subsection{Variance}
 Sample variance of $X$ is
 \begin{equation}
@@ -283,7 +326,7 @@ Sample variance of $X$ is
 
 It is average squared deviations of observations from the mean.
 
-The square root of variance is called starndard deviatio, its symbol is $\delta$ for population data and $s$ for sample data
+The square root of variance is called standard deviation, its symbol is $\delta$ for population data and $s$ for sample data
 
 \begin{equation}
     S_x = \sqrt[2]{\frac{\sum_{i = 1}^{n} x_i^2 - \frac{(\sum_{i = 1}^{n}x_i)^2}{n}}{n-1}}
@@ -389,11 +432,11 @@ Solution:
 - Suppose we know $\bar{x}_{n}$ (ie average of $x_1, x_2, x_3, \dots, x_n$) and another observation $x_{n+1}$ becomes available then;
 
 \begin{equation}
-    x_{n + 1} = \frac{x_{n+1} + n\bar{x}_n}{n + 1}
+    \bar{x}_{n + 1} = \frac{x_{n+1} + n\bar{x}_n}{n + 1}
 \end{equation}
 
 ie, the result for $(n + 1)^{st}$ term is obtained from the value of the $n^{th}$ terms.
-eg. suppose the mean of a set of $n = 50$ values of some variable $x$ in $\bar{x}_n = \bar{x}_{50} = 63.75$. Let us now assume that a fifty-first obe=servation $x_{n + 1} = x_{61} = 22$ becomes available. What is the average of all data points?
+eg. suppose the mean of a set of $n = 50$ values of some variable $x$ in $\bar{x}_n = \bar{x}_{50} = 63.75$. Let us now assume that a fifty-first observation $x_{n + 1} = x_{61} = 22$ becomes available. What is the average of all data points?
 
 solution
 
@@ -406,10 +449,30 @@ solution
                     & = 62.93                              \\
 \end{align*}
 
+Now for variance, suppose we know $S_n^2$ (ie. the variance of the values $x_1, x_2, \ldots, x_n$) and another observation $x_{n + 1}$ becomes available.
+
+Given
+\begin{center}
+    $S_n^2 = \frac{\sum_{i = 1}^{n}(x_i - \bar{x}_n)^2}{n - 1}$ then ; \\
+
+    $S_{n + 1}^2 = \frac{(x_{n+1} - \bar{x}_n)^2}{n} + \frac{(n - 1)S_n^2}{n}$
+\end{center}
+
+Eg. Suppose mean and variance of a set of 25 values of some variable $x$ are $\bar{x}_n = \bar{x}_{25} = 10$ and $S_n^2 = S_{25}^2 = 8.72$ respectively. Assume a twenty-sixth observation $x_{n+1} = x_26 = 14$ is obtained. what is the variance of all $26$ data points?
+
+Solution:
+\begin{align*}
+    S_{n + 1}^2 & = \frac{(x_{n+1} - \bar{x}_n)^2}{n} + \frac{(n - 1)S_n^2}{n} \\
+    S_{26}^2    & = \frac{(14 - 10)^2}{25} + \frac{(25 - 1)8.72}{25}           \\
+    S_{26}^2    & = 9.0112                                                     \\
+\end{align*}
+
+
+
 \newpage
 %end of section
 
-\section{Measures of Symmetry}
+\section{Measures of Symmetry}%!SECTION
 \subsection{Skewness}
 \textbf{Definition} An absolute frequency distribution is said to be skewed if it lacks symmetry.
 - In other words, coeficient of skewness is a measure of symmetry of the distribution of a random variable.
@@ -427,7 +490,7 @@ to obtain
 \end{equation}
 - For sample data, we can use $SK_p = \frac{3(\mu - median)}{\delta}$
 
-- When $SK_p = 0$, it means $X_s^{'}$ absolute frequency distribution is symetrical aboute the mean
+- When $SK_p = 0$, it means $X's$ absolute frequency distribution is symetrical about the mean
 - when $SK_p > 0$ it implies that the distribution of $X$ is skewed to the right ie. It has a longer tail on the right hand side of mean.
 - when $SK_p < 0$ it means that the distribution of $X$ is skewed to the left ie. It has a longer tail on the left hand side of mean compared to the right.
 
@@ -444,11 +507,168 @@ if $Q_2 - Q_1 = Q_3 - Q_2$, then the distribution is symetrical.
 - Both quantities are independent if units or dimensionless.
 - The coeficient of kurtosis is estimated by
 \begin{equation}
-    K = \frac{\frac{(Q_3 - Q_1)}{2} }{P_90 - P_10}
+    K = \frac{\frac{(Q_3 - Q_1)}{2} }{P_{90} - P_{10}}
 \end{equation}
 
 where the numerator $QD = \frac{(Q_3 - Q_1)}{2}$ is called quartile deviation, which measures half the distance between the 1st and 3rd quartiles. While $P_{90}$ is $90^{th}$ percentile and $P_{10}$ is $10^{th}$ percentile.
 
 \hbox{\includegraphics[width=\textwidth]{kurtosis.png}}
 \newpage
+%end of section
+
+\section{Tabular methods of summarizing data} %!SECTION
+
+values of variable $X$ can be presented as absolute frequency distribution of $X$ relative frequency or percentage frequency
+
+
+Suppose we have a set of $N$ observations on a population variable $X: X_1, X_2, X_3, \ldots, X_n$ then absolute Frequencies distribution of $x$ shows the absolute Frequencies with which the the various values of $X$ occur in a set of data.
+
+It is a number of times a particular value of $X$ is replaced.
+
+Eg. the performance time for a worker in minutes
+
+%doing tables %worker minutes
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline X        & absolute Frequency \\
+        \hline 6        & 1                  \\
+        \hline 7        & 1                  \\
+        \hline 8        & 1                  \\
+        \hline 9        & 2                  \\
+        \hline 10       & 2                  \\
+        \hline 11       & 4                  \\
+        \hline 12       & 7                  \\
+        \hline 13       & 11                 \\
+        \hline 14       & 5                  \\
+        \hline 15       & 4                  \\
+        \hline 16       & 4                  \\
+        \hline 17       & 3                  \\
+        \hline 18       & 2                  \\
+        \hline 19       & 2                  \\
+        \hline 20       & 1                  \\
+        \hline $\sum f$ & 50                 \\
+
+        \hline
+    \end{tabular}
+\end{table}
+
+
+Relative frequency distributions transforms absolute frequency distribution by expressing the absolute frequencies as a fraction of the total number of observations $N$
+
+The sum of of the relative frequencies is
+
+The graphical distribution of relative frequency distribution is called relative frequency function.
+
+Percent distribution is found by multiplying relative Frequencies by a $100$ so as to convert them to percentage.
+
+Eg. the performance time for a worker(Minutes)
+
+%doing tables %worker minutes
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline X        & absolute Frequency & Relative F      & Percent of N \\
+        \hline 6        & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline 7        & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline 8        & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline 9        & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 10       & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 11       & 4                  & $\frac{4}{50}$  & 8            \\
+        \hline 12       & 7                  & $\frac{7}{50}$  & 14           \\
+        \hline 13       & 11                 & $\frac{11}{50}$ & 22           \\
+        \hline 14       & 5                  & $\frac{5}{50}$  & 10           \\
+        \hline 15       & 4                  & $\frac{4}{50}$  & 8            \\
+        \hline 16       & 4                  & $\frac{4}{50}$  & 8            \\
+        \hline 17       & 3                  & $\frac{3}{50}$  & 6            \\
+        \hline 18       & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 19       & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 20       & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline $\sum f$ & 50                 &                 &              \\
+
+        \hline
+    \end{tabular}
+\end{table}
+
+
+FOR GROUPED Data
+
+\begin{equation*}
+    \mu = \frac{\sum f_j x_j}{\sum f_j}  = \frac{\sum f_j x_j}{n}
+\end{equation*}
+for population data
+
+
+\begin{equation*}
+    \bar{x} = \frac{\sum f_j x_j}{\sum f_j}  = \frac{\sum f_j x_j}{N}
+\end{equation*}
+for sample data
+
+
+VARIANCE
+
+\begin{equation*}
+    \delta^2 = \frac{\sum f_j(x_j - \mu)^2}{N} = \frac{\sum f_j x_j^2}{N} - (\frac{\sum f_jx_j}{N})^2
+\end{equation*}
+
+\begin{equation*}
+    s^2 = \frac{\sum f_j(x_j - \bar{x})^2}{n-1} = \frac{\sum f_j x_j^2}{n-1} - \frac{(\sum f_jx_j)^2}{n(n-1)}
+\end{equation*}
+for sample data
+
+
+%!IGNORE
+%!IGNORE
+
+We will focus on both grouped and ungrouped data. \\
+Recall $\mu = \frac{\sum_{i = 1}^{N}x_i}{N}$ and $\bar{x} = \frac{\sum_{i = 1}^{n}x_i}{n}$
+
+also
+\begin{align*}
+    \delta_x^2 & = \frac{\sum_{}^{}(x - \mu)^2}{N}                                                 \\
+               & = \frac{\sum_{}^{}(x^2 - 2\mu x + \mu^2)}{N}                                      \\
+               & = \frac{\sum_{}^{}x^2}{N} - \frac{2\mu\sum_{}^{}x}{N} + \frac{\sum_{}^{}\mu^2}{N} \\
+\end{align*}
+
+
+
+
+
+%doing tables %sample mean
+
+eg: Given X: 10, 15
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline $j$ & $x_j$ & f \\
+        \hline 1   & 10    & 4 \\
+        \hline 2   & 15    & 2 \\
+        \hline 3   & 17    & 1 \\
+        \hline 4   & 20    & 2 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Find mean and variance of X
+
+
+Eg: Find the sample mean and variance for these data:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline $j$ & $x_j$   & $f_j$ & $m_j$ \\
+        \hline 1   & 10 - 20 & 7     & 15    \\
+        \hline 2   & 20 - 30 & 2     & 25    \\
+        \hline 3   & 30 - 40 & 10    & 35    \\
+        \hline 4   & 40 - 50 & 1     & 45    \\
+        \hline
+    \end{tabular}
+\end{table}
+%end of section
+
+%!IGNORE
+%!INGNORE
+
 \end{document}
