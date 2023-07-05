@@ -7,6 +7,19 @@
 \usepackage{witharrows}
 \usepackage{parskip}
 \usepackage{minted}
+\usepackage{listings}
+\usemintedstyle{colorful} % Choose the desired code highlighting style
+
+% Configuration for the listings package
+\lstset{
+  basicstyle=\ttfamily\small, % Set the font and size for the code
+  numbers=left, % Show line numbers on the left side
+  numberstyle=\scriptsize\color{gray}, % Set the style for line numbers
+  frame=single, % Add a frame around the code
+  breaklines=true, % Enable line breaks within code
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}, % Set the symbol for line breaks
+  showstringspaces=false % Hide spaces within strings
+}
 
 \title{Title}
 \author{First LastName}
@@ -51,7 +64,7 @@
     \end{WithArrows}
 \]
 \section{code display}
-\begin{minted}{Java}
+\begin{minted}[linenos]{Java}
     import java.util.Scanner;
 
     public static void main(String[] args){
@@ -61,5 +74,17 @@
         System.out.print(num);
     }
 \end{minted}
+
+
+\begin{lstlisting}[language=Java]
+    import java.util.Scanner;
+
+    public static void main(String[] args){
+        Scanner input = new Scanner (System.in);
+        System.out.print("Enter a number: "); //prompt user to enter value for x
+        int num = Integer.parseInt(input.nextLine());
+        System.out.print(num);
+    }
+    \end{lstlisting}
 
 \end{document}
