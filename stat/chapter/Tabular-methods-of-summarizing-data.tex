@@ -1,0 +1,154 @@
+\chapter{Tabular methods of summarizing data} %!chapter
+
+values of variable $X$ can be presented as absolute frequency distribution of $X$ relative frequency or percentage frequency
+
+
+Suppose we have a set of $N$ observations on a population variable $X: X_1, X_2, X_3, \ldots, X_n$ then absolute Frequencies distribution of $x$ shows the absolute Frequencies with which the the various values of $X$ occur in a set of data.
+
+It is a number of times a particular value of $X$ is replaced.
+
+Eg. the performance time for a worker in minutes
+
+%doing tables %worker minutes
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline X        & absolute Frequency \\
+        \hline 6        & 1                  \\
+        \hline 7        & 1                  \\
+        \hline 8        & 1                  \\
+        \hline 9        & 2                  \\
+        \hline 10       & 2                  \\
+        \hline 11       & 4                  \\
+        \hline 12       & 7                  \\
+        \hline 13       & 11                 \\
+        \hline 14       & 5                  \\
+        \hline 15       & 4                  \\
+        \hline 16       & 4                  \\
+        \hline 17       & 3                  \\
+        \hline 18       & 2                  \\
+        \hline 19       & 2                  \\
+        \hline 20       & 1                  \\
+        \hline $\sum f$ & 50                 \\
+
+        \hline
+    \end{tabular}
+\end{table}
+
+
+Relative frequency distributions transforms absolute frequency distribution by expressing the absolute frequencies as a fraction of the total number of observations $N$
+
+The sum of of the relative frequencies is
+
+The graphical distribution of relative frequency distribution is called relative frequency function.
+
+Percent distribution is found by multiplying relative Frequencies by a $100$ so as to convert them to percentage.
+
+Eg. the performance time for a worker(Minutes)
+
+%doing tables %worker minutes
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline X        & absolute Frequency & Relative F      & Percent of N \\
+        \hline 6        & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline 7        & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline 8        & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline 9        & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 10       & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 11       & 4                  & $\frac{4}{50}$  & 8            \\
+        \hline 12       & 7                  & $\frac{7}{50}$  & 14           \\
+        \hline 13       & 11                 & $\frac{11}{50}$ & 22           \\
+        \hline 14       & 5                  & $\frac{5}{50}$  & 10           \\
+        \hline 15       & 4                  & $\frac{4}{50}$  & 8            \\
+        \hline 16       & 4                  & $\frac{4}{50}$  & 8            \\
+        \hline 17       & 3                  & $\frac{3}{50}$  & 6            \\
+        \hline 18       & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 19       & 2                  & $\frac{2}{50}$  & 4            \\
+        \hline 20       & 1                  & $\frac{1}{50}$  & 2            \\
+        \hline $\sum f$ & 50                 &                 &              \\
+
+        \hline
+    \end{tabular}
+\end{table}
+
+
+FOR GROUPED Data
+
+\begin{equation*}
+    \mu = \frac{\sum f_j x_j}{\sum f_j}  = \frac{\sum f_j x_j}{n}
+\end{equation*}
+for population data
+
+
+\begin{equation*}
+    \bar{x} = \frac{\sum f_j x_j}{\sum f_j}  = \frac{\sum f_j x_j}{N}
+\end{equation*}
+for sample data
+
+
+VARIANCE
+
+\begin{equation*}
+    \delta^2 = \frac{\sum f_j(x_j - \mu)^2}{N} = \frac{\sum f_j x_j^2}{N} - (\frac{\sum f_jx_j}{N})^2
+\end{equation*}
+
+\begin{equation*}
+    s^2 = \frac{\sum f_j(x_j - \bar{x})^2}{n-1} = \frac{\sum f_j x_j^2}{n-1} - \frac{(\sum f_jx_j)^2}{n(n-1)}
+\end{equation*}
+for sample data
+
+
+%!IGNORE
+%!IGNORE
+
+We will focus on both grouped and ungrouped data. \\
+Recall $\mu = \frac{\sum_{i = 1}^{N}x_i}{N}$ and $\bar{x} = \frac{\sum_{i = 1}^{n}x_i}{n}$
+
+also
+\begin{align*}
+    \delta_x^2 & = \frac{\sum_{}^{}(x - \mu)^2}{N}                                                 \\
+               & = \frac{\sum_{}^{}(x^2 - 2\mu x + \mu^2)}{N}                                      \\
+               & = \frac{\sum_{}^{}x^2}{N} - \frac{2\mu\sum_{}^{}x}{N} + \frac{\sum_{}^{}\mu^2}{N} \\
+\end{align*}
+
+
+
+
+
+%doing tables %sample mean
+
+eg: Given X: 10, 15
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline $j$ & $x_j$ & f \\
+        \hline 1   & 10    & 4 \\
+        \hline 2   & 15    & 2 \\
+        \hline 3   & 17    & 1 \\
+        \hline 4   & 20    & 2 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Find mean and variance of X
+
+
+Eg: Find the sample mean and variance for these data:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline $j$ & $x_j$   & $f_j$ & $m_j$ \\
+        \hline 1   & 10 - 20 & 7     & 15    \\
+        \hline 2   & 20 - 30 & 2     & 25    \\
+        \hline 3   & 30 - 40 & 10    & 35    \\
+        \hline 4   & 40 - 50 & 1     & 45    \\
+        \hline
+    \end{tabular}
+\end{table}
+%end of chapter
+
+%!IGNORE
+%!INGNORE

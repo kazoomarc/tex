@@ -1,0 +1,65 @@
+\documentclass{report}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{witharrows}
+\usepackage{parskip}
+\usepackage{minted}
+
+\title{Title}
+\author{First LastName}
+
+\begin{document}
+\parindent 0pt
+\parskip 12pt
+\maketitle
+
+\onecolumn
+\begin{multicols}{2}
+
+    \section{Columns}
+    \begin{itemize}
+        \item two-Columns
+        \item multicols
+        \item minipage
+    \end{itemize}
+    \lipsum[1-4]
+
+    \section{what}
+\end{multicols}
+
+\onecolumn
+\section{Minipages}
+
+\begin{minipage}{0.5\textwidth}
+    \lipsum[1]
+\end{minipage}
+\hspace{10pt}
+\begin{minipage}{0.4\textwidth}
+    \lipsum[1]
+\end{minipage}
+\newpage
+\colorbox{yellow}{$ \overbrace{\underbrace{y(0)}_{this}}^{what}$}
+
+\section{Arrows}
+\WithArrowsOptions{displaystyle, tikz=blue}
+\[\begin{WithArrows}
+        y & = mx  + c  \Arrow{enter coeficients}\\
+        y & = 5x + 2
+    \end{WithArrows}
+\]
+\section{code display}
+\begin{minted}{Java}
+    import java.util.Scanner;
+
+    public static void main(String[] args){
+        Scanner input = new Scanner (System.in);
+        System.out.print("Enter a number: "); //prompt user to enter value for x
+        int num = Integer.parseInt(input.nextLine());
+        System.out.print(num);
+    }
+\end{minted}
+
+\end{document}

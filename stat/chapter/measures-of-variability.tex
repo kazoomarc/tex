@@ -1,0 +1,179 @@
+\chapter{Measures of Variability / Dispersion}%!chapter
+The variance, range and interquartile range are some of the measurement of dispersion of a dataset.
+
+They quantify amount of spread of data from the central value.
+\section{Range}
+NOT AVAILABLE
+\section{Inter-Quartile Range (IQR)}
+\textbf{Definition:} An interquartile range (IRQ) is the difference between the first and third quartiles.
+
+The interquartile range is a measure of spread of the data.
+
+IQR tells you the spread of the middle half of your distribution.
+
+IQR contains the {difference between} second and third quartiles  or the middle half that data
+
+IQR can be used to find outliers in data.
+
+\section{Outlier analysis}
+
+Outlier observations are the ones that do not confirm to distribution structure of the rest of the data.
+
+The outliers can be identified by the following formulae:
+
+\begin{equation}
+    < Q_1 - 1.5\text{IQR or} > Q_3 + 1.5\text{IQR}
+\end{equation}
+\section{Variance}
+Sample variance of $X$ is
+\begin{equation}
+    S^2 = \frac{\sum_{i = 1}^{n}(x_i - \bar{x})^2}{n - 1} = \frac{\sum_{i = 1}^{n} x_i^2 - \frac{(\sum_{i = 1}^{n}x_i)^2}{n}}{n-1}
+\end{equation}
+
+It is average squared deviations of observations from the mean.
+
+The square root of variance is called standard deviation, its symbol is $\delta$ for population data and $s$ for sample data
+
+\begin{equation}
+    S_x = \sqrt[2]{\frac{\sum_{i = 1}^{n} x_i^2 - \frac{(\sum_{i = 1}^{n}x_i)^2}{n}}{n-1}}
+\end{equation}
+\begin{equation}
+    \delta = \sqrt[2]{\delta^2} = \sqrt[2]{\frac{\sum_{i = 1}^{N} x_i^2 - \frac{(\sum_{i = 1}^{N}x_i)^2}{N}}{N}}
+\end{equation}
+
+The standard deviation measures standard distance of each data point from their mean.
+\section{Relative Variance and Coefiecient of Variation}
+
+Relative variance is the ratio of variance of the data to the square of the mean of the data set. ie,
+\begin{center}
+    for sample mean
+\end{center}
+\begin{equation}
+    V_{\bar{x}}^2 = \frac{S_x^2}{(\bar{X}^2)}
+\end{equation}
+\begin{center}
+    OR
+\end{center}
+\begin{center}
+    For population
+\end{center}
+\begin{equation}
+    V_{\mu}^2 = \frac{\delta_x^2}{(\mu_x^2)}
+\end{equation}
+
+It is mostly used to compare variation across data sets, as $V_{\mu}^2$ or $V_{\bar{x}}^2$ has no units.
+
+The square root of relative variance is called the coeficient of variation(Cv) or "relative error" of mean $\bar{x}$ or $\mu$
+
+It is also dimensionless quantity and ussually given in percentages.
+
+\begin{center}
+    for sample mean
+\end{center}
+\begin{equation}
+    CV_{\bar{x}} = \frac{S_x}{\bar{X}}
+\end{equation}
+\begin{center}
+    OR
+\end{center}
+\begin{center}
+    For population
+\end{center}
+\begin{equation}
+    CV_{\mu} = \frac{\delta_x}{\mu_x}
+\end{equation}
+
+
+Eg: Given the sample data 1,2,3,4,5. Compute mean, variance, standard deviation, relative variance and coeficient of variation(CV)for the data.
+
+Solution:
+
+\begin{enumerate}
+    \item[(a)]
+
+        \begin{align*}
+            \bar{x} & = \frac{\sum_{i = 1}^{n} x_i}{n}               \\
+                    & n = 5, x_1 = 1 x_2 = 2 x_3 = 3 x_4 = 4 x_5 = 5 \\
+            \bar{x} & = \frac{1 + 2 + 3 + 4 + 5}{5}                  \\
+            \bar{x} & = \frac{15}{5}                                 \\
+            \bar{x} & = 3                                            \\
+        \end{align*}
+        Interpretation: The data values have higher weight around the value of $3$ and they are concentrated around the value of $3$
+    \item[(b)]
+        \begin{align*}
+            S_x^2 & = \frac{\sum_{i = 1}^{n}x_i^2 - \frac{(\sum_{i = 1}^{n}x_i)^2}{n}}{n-1}         \\
+            S_x^2 & = \frac{(1^2 + 2^2 + 3^2 + 4^2 + 5^2) - \frac{(1 + 2 + 3 + 4 + 5)^2}{5}}{5 - 1} \\
+            S_x^2 & = \frac{55 - 45}{4}                                                             \\
+            S_x^2 & = 2.5                                                                           \\
+        \end{align*}
+
+    \item[(c)] \begin{align*}
+            S_x & = \sqrt[2]{S_x^2} \\
+            S_x & = \sqrt[2]{2.5}   \\
+            S_x & = 1.581           \\
+        \end{align*}
+
+
+        Interpretation: The result means each value in the data set is on average at a distance of $1.581$ away from mean.
+    \item[(d)]
+        \begin{align*}
+            V_x^2 & = \frac{S_x^2}{(\bar{x})^2} \\
+            V_x^2 & = \frac{2.5}{3^2}           \\
+            V_x^2 & = \frac{2.5}{9}             \\
+            V_x^2 & = 0.278                     \\
+        \end{align*}
+    \item[(e)]
+        \begin{align*}
+            C_v & = \sqrt[2]{V_x^2}                     \\
+            C_v & = \sqrt[2]{\frac{S_x^2}{(\bar{x})^2}} \\
+            C_v & = \frac{S_x}{\bar{x}}                 \\
+            C_v & = \frac{1.581}{3}                     \\
+            C_v & = 0.527                               \\
+            C_v & = 52.7\%                              \\
+        \end{align*}
+        The coeficient of variation result shows that that the ratio of standard deviation to the sample mean is $52.7\%$
+\end{enumerate}
+\section{Recursion formulae for sample mean and variance}
+- We can compute mean of $(n + 1)$ data poinsts effectively from knowing the mean ($\bar{x}$) of the first $n$ of them through a recursion formula for mean.
+- Suppose we know $\bar{x}_{n}$ (ie average of $x_1, x_2, x_3, \dots, x_n$) and another observation $x_{n+1}$ becomes available then;
+
+\begin{equation}
+    \bar{x}_{n + 1} = \frac{x_{n+1} + n\bar{x}_n}{n + 1}
+\end{equation}
+
+ie, the result for $(n + 1)^{st}$ term is obtained from the value of the $n^{th}$ terms.
+eg. suppose the mean of a set of $n = 50$ values of some variable $x$ in $\bar{x}_n = \bar{x}_{50} = 63.75$. Let us now assume that a fifty-first observation $x_{n + 1} = x_{61} = 22$ becomes available. What is the average of all data points?
+
+solution
+
+
+
+\begin{align*}
+    \bar{x}_{n + 1} & = \frac{x_{n+1} + n\bar{x}_n}{n + 1} \\
+                    & = \frac{22 + 50(63.75)}{50 + 1}      \\
+                    & = \frac{3209.5}{51}                  \\
+                    & = 62.93                              \\
+\end{align*}
+
+Now for variance, suppose we know $S_n^2$ (ie. the variance of the values $x_1, x_2, \ldots, x_n$) and another observation $x_{n + 1}$ becomes available.
+
+Given
+\begin{center}
+    $S_n^2 = \frac{\sum_{i = 1}^{n}(x_i - \bar{x}_n)^2}{n - 1}$ then ; \\
+
+    $S_{n + 1}^2 = \frac{(x_{n+1} - \bar{x}_n)^2}{n} + \frac{(n - 1)S_n^2}{n}$
+\end{center}
+
+Eg. Suppose mean and variance of a set of 25 values of some variable $x$ are $\bar{x}_n = \bar{x}_{25} = 10$ and $S_n^2 = S_{25}^2 = 8.72$ respectively. Assume a twenty-sixth observation $x_{n+1} = x_26 = 14$ is obtained. what is the variance of all $26$ data points?
+
+Solution:
+\begin{align*}
+    S_{n + 1}^2 & = \frac{(x_{n+1} - \bar{x}_n)^2}{n} + \frac{(n - 1)S_n^2}{n} \\
+    S_{26}^2    & = \frac{(14 - 10)^2}{25} + \frac{(25 - 1)8.72}{25}           \\
+    S_{26}^2    & = 9.0112                                                     \\
+\end{align*}
+
+
+
+\newpage
+%end of chapter

@@ -1,0 +1,32 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{geometry}
+
+
+
+
+\title{The Thesis \\\large{The University of Malawi}}
+\author{Joel Mwala}
+\date{Zafalati 2023}
+
+\begin{document}
+\maketitle
+
+\chapter*{Abstract}
+\lipsum[1-3] %autogen 3
+\chapter*{Dedication}
+\lipsum[1]
+\chapter*{Acknowledgement}
+\tableofcontents
+
+\include{gib1}
+\include{gib2}
+\include{conclusion}
+\appendix
+\include{appendix}
+
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\end{document}
