@@ -1,0 +1,93 @@
+\documentclass[12pt]{report}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{setspace} % Required for paragraph setting
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{titlesec}
+%\usepackage{ebgaramond}
+\usepackage{amssymb}
+\usepackage{hyperref} % for links in tableofcontents and browser
+\usepackage{float} %H specifier in table
+\usepackage{xcolor}
+
+%\definecolor{vblue}{HTML}{2660A4}
+\usepackage[]{geometry}
+% Set the page margins
+\geometry{
+    left=2.3cm,
+    right=2.3cm,
+    top=3cm,
+    bottom=3cm,
+}
+
+%title to garamond
+%\titleformat{\section}{\fontfamily{ebgaramond}\selectfont\bfseries\large}{\thesection}{1em}{}
+
+%tag for definitions
+\newtheorem{definition}{Definition}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{proofs}{Proof}
+
+
+
+%paragraph tag%
+\newtheoremstyle{myParagraph}
+{\topsep} % space above
+{\topsep} % space below
+{\normalfont} %body font (non italic)
+{} %ident amount
+{\bfseries} %theorem head font bold
+{}% punctuation after theorem head
+{.05em}%space after theorem head
+{\thmname{#1}\thmnumber{#2} -- \thmnote{#3}} %Theorem head spec
+
+
+\theoremstyle{myParagraph}
+\newtheorem*{para}{}
+
+
+%example tag%
+\newtheoremstyle{examplestyle}
+{\topsep} % space above
+{\topsep} % space below
+{} %body font (normal)
+{} %ident amount
+{\bfseries} %theorem head font bold
+{}% punctuation after theorem head
+{.05em}%space after theorem head
+{\thmname{#1}\thmnumber{#2}\thmnote{#3}} %theorem head spec
+
+
+\theoremstyle{examplestyle}
+\newtheorem*{examples}{Examples\\}
+
+
+
+
+
+
+
+
+\setlength{\parindent}{0pt}
+\title{Foundations of Probability and Statistics}
+\author{Lectures from Dr Kaombe}
+
+
+\begin{document}
+
+\maketitle
+\vspace*{5cm}
+\begin{center}
+    compiled in \LaTeX \nobreakspace by \href{https://bento.me/joelmwala}{\underline{Joel Mwala}}
+\end{center}
+
+\newpage
+\tableofcontents
+
+
+\newpage
+
+\include{chapter/sets and elements/Sets and Elements}
+
+\end{document}
