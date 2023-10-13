@@ -2,7 +2,7 @@
 
 \section{Sets and Elements}
 \begin{definition}
-    A set is a well defined list or correction of objects.
+    A set is a well defined list or collection of objects.
 \end{definition}
 
 \begin{definition}
@@ -12,11 +12,11 @@
 \section{Set Notations:}
 
 \begin{para}
-    Uppercase letters of the alphabet, i.e., $A, B, M, X$ are used to denote sets an lowercase letters i.e., $a, b, m, x$ for members of sets
+    Uppercase letters of the alphabet, i.e., $A, B, M, X$ are used to denote sets and lowercase letters i.e., $a, b, m, x$ for members of sets
 \end{para}
 
 \begin{para}
-    if $A$ is a set and $k$ its element, then the expression $k \in A$ is read as "$k$is an element of $A$". If $p$ is not a member of $A$ it is written as $p \notin A$
+    if $A$ is a set and $k$ its element, then the expression $k \in A$ is read as "$k$ is an element of $A$". If $p$ is not a member of $A$ it is written as $p \notin A$
 \end{para}
 
 \subsection{Examples of Sets}
@@ -56,7 +56,7 @@
 
 \subsection{Subset Examples}
 
-let
+let:\\
 $\mathbb{N} = \{1, 2, 3, \ldots\}$\\
 $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$\\
 $\mathbb{R} = \{x: \text{ x is a real number}\}$\\
@@ -64,7 +64,7 @@ $\mathbb{R} = \{x: \text{ x is a real number}\}$\\
 Then $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$
 
 \begin{para}
-    A subset of real numbers can also be defined as an interval on the real line
+    A subset of real numbers can also be defined as an interval on the real line.
 
     \begin{center}
         \includegraphics[width=0.3\linewidth]{chapter/sets and elements/numberLine.png}
@@ -76,13 +76,13 @@ Then $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$
 \begin{examples}
     \mbox{}\\[-\baselineskip] %empty line
     \begin{enumerate}
-        \item $(a,b) = \{x:  a<x<b\; x \in \mathbb{R}$\\
+        \item $(a,b) = \{x:  a<x<b, x \in \mathbb{R}\} $\\
               means an open interval of real numbers from $a$ to $b$.
-        \item $[a,b] = \{x: a \leq x \leq b; x \in \mathbb{R}\} $\\
+        \item $[a,b] = \{x: a \leq x \leq b, x \in \mathbb{R}\} $\\
               means $a$ closed interval of real numbers from $a$ to $b$.
-        \item $(a,b] = \{x: a < x \leq b; x \in \mathbb{R}\} $\\
+        \item $(a,b] = \{x: a < x \leq b, x \in \mathbb{R}\} $\\
               means an open-closed interval of real numbers from $a$ to $b$.
-        \item $[a,b) = \{x: a \leq x < b; x \in \mathbb{R}\} $\\
+        \item $[a,b) = \{x: a \leq x < b, x \in \mathbb{R}\} $\\
               means an closed-open interval of real numbers from $a$ to $b$.
     \end{enumerate}
 \end{examples}
@@ -137,17 +137,17 @@ Then $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$
     :\\
     \begin{enumerate}
         \item let $x \in 1^{st} A$, then by uniqueness of sets $x \in 2^{nd} A$. Hence by the definition of subset $A \subset A$
-        \item let $x \in A$. Then $A \subset B \implies x \in B$(by definition of subset) likewise, $B \subset A$ if $y \in B$ then $y \in A$. now we have $x \in A \implies x \in B$ AND $y \in b \implies y \in A$ hence $x = y$ i.e., $A = B$
+        \item let $x \in A$. Then $A \subset B \implies x \in B$(by definition of subset) likewise, $B \subset A$ if $y \in B$ then $y \in A$. now we have $x \in A \implies x \in B$ AND $y \in B \implies y \in A$ hence $x = y$ i.e., $A = B$
         \item let $x \in A$, then $A \subset B \implies x \in B$. while $B \subset C \implies x \in C$ $\therefore A \subset B$ and $x \in C$, Hence $A \subset B \subset C$ or $A \subset C$
     \end{enumerate}
 \end{proofs}
 \section{Set Operation}
 \subsection{Union}
 \begin{para}
-    Let $A$ and $B$ be any sets. The union of $A$ and $B$ denoted by $A \cup B$ is the set that consists of all elements that belong to $A$ or to $B$ or to both, i.e., $A \cup B = {x:x \in A \text{ or } x \in B}$
+    Let $A$ and $B$ be any sets. The union of $A$ and $B$ denoted by $A \cup B$ is the set that consists of all elements that belong to $A$ or to $B$ or to both, i.e., $A \cup B = \{x:x \in A \text{ or } x \in B\}$
 \end{para}
 \begin{para}
-    let $A = \{1,2,3,4\}$ and $B = \{3,4,5,6\}$. Then $A \cup B = {1,2,3,4,5,6}$
+    let $A = \{1,2,3,4\}$ and $B = \{3,4,5,6\}$. Then $A \cup B = \{1,2,3,4,5,6\}$
 \end{para}
 \subsection{Intersection}
 \begin{para}
@@ -166,13 +166,14 @@ Then $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$
 \begin{para}
     Let $A$ be any set and $U$, the Universal set, the complement of $A$, denoted by $A^c$, is the set of elements which do not belong to $A$, i.e $A^c = \{x:x \in U, x \in A\}$
 
-    E.g: Let $A = \{1,2,3,4\}$ and $U = {1,2,3, \dots}$. Then $A^c = \{5,6,7,\dots\}$
+    E.g: \\
+    Let $A = \{1,2,3,4\}$ and $U = \{1,2,3, \dots\}$. Then $A^c = \{5,6,7,\dots\}$
 \end{para}
 
 \subsection{Difference}
 \begin{para}
-    let $A$ and $B$ be any sets. the difference of $A$ and $B$ or \underline{relative difference} of $B$ with respect to $A$, denoted by $A\text{\\}B$, is the set of elements which belong to $A$ but not to $B$.\\
-    i.e., $A\text{\\}B$ = $x:x \in A, x \notin B$
+    let $A$ and $B$ be any sets. the difference of $A$ and $B$ or \underline{relative difference} of $B$ with respect to $A$, denoted by $A\backslash B$, is the set of elements which belong to $A$ but not to $B$.\\
+    i.e., $A\backslash B$ = $\{x:x \in A, x \notin B\}$
 \end{para}
 
 
@@ -182,19 +183,32 @@ Then $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$
 
 
 \begin{para}
-    Note that $A\text{\\}B$ AND $B$ are disjoint i.e, $(A\text{\\}B) \cap B = \emptyset$
+    Note that $A\backslash B$ AND $B$ are disjoint i.e, $(A\backslash B) \cap B = \emptyset$
 \end{para}
 
 \begin{para}
-    E.g: Using the previous example, with $A = \{1,2,3,4\}$, $B = \{3,4,5,6\}$ we have $A\text{\\}B$ = $\{1,2\}$
+    E.g: Using the previous example, with
+    \begin{align*}
+        A             & = \{1,2,3,4\} \\
+        B             & = \{3,4,5,6\} \\
+        A\backslash B & = \{1,2\}     \\
+    \end{align*}
+
 \end{para}
 
 
 \subsection{Symmetric Difference}
 
 \begin{para}
-    The Symmetric difference of the sets $A$ and $B$, denoted by $A \oplus B$ is the set consisting of those elements which belong to $A$ or $B$, but not both i.e, $A \oplus B = (A \cup B)\text{\\}(A \cap B)$ or $A \oplus B = (A \text{\\}B)\nobreakspace U \nobreakspace(B\text{\\}A)$\\
-    E.g: If $A=\{1,2,3,4\}$, $B=\{3,4,5,6\}$, $A \oplus B = (A \cup B)\text{\\}(A \cap B)$ $=\{1,2,3,4,5,6\} \text{\\}\{3,4\}$ $= \{1,2,5,6\}$
+    The Symmetric difference of the sets $A$ and $B$, denoted by $A \oplus B$ is the set consisting of those elements which belong to $A$ or $B$, but not both i.e, $A \oplus B = (A \cup B)\backslash (A \cap B)$ or $A \oplus B = (A \backslash B)\nobreakspace U \nobreakspace(B\backslash A)$
+    E.g: If
+    \begin{align*}
+        A          & =\{1,2,3,4\}                       \\
+        B          & =\{3,4,5,6\}                       \\
+        A \oplus B & = (A \cup B)\backslash (A \cap B)  \\
+                   & =\{1,2,3,4,5,6\}\backslash \{3,4\} \\
+                   & = \{1,2,5,6\}                      \\
+    \end{align*}
 \end{para}
 
 \subsection{Product Set or Cartesian Product}
@@ -207,9 +221,23 @@ Then $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$
 
 \begin{para}
     let $A$ and $B$ be two sets. The product set or cartesian product of $A$ and $B$, denoted by $A \times B$ is a set of all possible 2-tuples $(a,b)$, where $a \in A$ and $b \in B$, i.e. $A \times B = \{(x,y): x \in A, y \in B\}$ e.g. \\
-    let $A=\{1,2,3\}$ and $B=\{a,b\}$, Then \\
-    $A \times B = \{(1,a),(1,b),(2,a),(2,b),(3,a),(3,b)\}$\\
-    while\\
+    let:\\
+    $A=\{1,2,3\}$ and\\
+    $B=\{a,b\}$, Then \\
+    $A \times B = \{(1,a),(1,b),(2,a),(2,b),(3,a),(3,b)\}$ while\\
     $B \times A = \{(a,1),(a,2),(a,3),(b,1),(b,2),(b,3)\}$
 \end{para}
 
+\section{Properties of Set Operations}
+
+\begin{enumerate}
+    \item Idempotent Laws
+    \item Associative Laws
+    \item Commutative Laws
+    \item Distributive Laws
+    \item Identity Laws
+    \item Complement Laws
+    \item De Morgan's Laws
+\end{enumerate}
+\section{Finite sets, Classes of sets}
+\section{Countable set}
