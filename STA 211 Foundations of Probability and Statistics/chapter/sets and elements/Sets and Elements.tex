@@ -263,11 +263,123 @@ Then $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R}$
     \item $A \cup U = U$
     \item $A \cap U = A$
     \item $A \cap \emptyset = \emptyset$
-
 \end{enumerate}
+
 \subsection*{6. Complement Laws}
-
+\begin{enumerate}
+    \item $A \cup A^c = U$
+    \item $A \cap A^c = \emptyset$
+    \item $(A^c)^c = A$
+    \item $U^c = \emptyset$
+    \item $\emptyset^c = U$
+\end{enumerate}
 \subsection*{7. De Morgan's Laws}
-
+\begin{enumerate}
+    \item $(A \cup B)^c = A^c \cap B^c$
+    \item $(A \cap B)^c = A^c \cup B^c$
+\end{enumerate}
 \section{Finite sets, Classes of sets}
-\section{Countable set}
+\subsection{Finite set}
+
+A set $A$ is finite if $A$ is empty or $A$ consists of exactly $m$ elements, where $m$ is a positive integer otherwise $A$ is an \underline{infinite}.
+e.g.
+
+Let $M$ be a set of days of a week i.e. $M = \{Mon, Tues, Wed,Thurs,Fri,Sat, Sun\}$ $\therefore M$ is a finite set.
+
+Let $W = \{x: x$ is a river on earth$\}$, Although it may be difficult to count the number of rivers on earth, with time this can be done hence $W$ is a finite set.
+
+Let $I$ be a unit interval of real numbers, i.e. $I = \{x: 0 \leq x \leq 1\}$ then $I$ is an infinite set.
+
+Let $Y$ be a set of positive even integers, i.e $Y = \{2,4,6,\ldots\}$ Then $Y$ is an infinite set.
+\subsection{Countable set}
+
+A set $A$ is countable if $A$ is finite or if $A$ has elements that can be arranged in the form of a sequence in this case $A$ is said to be \underline{countably infinite} otherwise $A$ is \underline{uncountable}.
+\vspace*{12pt}
+
+\textbf{Counting elements in finite sets}
+Let $A$ be any set, then the notation $n(A)$ shall denote the number of elements in $A$. e.g if $A = \{1,a,w,8,4\}$ then $n(A) = 5$
+
+For an empty set at $\emptyset$, $n(\emptyset) = 0$
+
+\begin{lemma}
+    :\\
+    a). Suppose $A$ and $B$ are disjoint sets. Then $A \cup B$ is finite and hence $n(A \cup B) = n(A) + n(B)$
+
+    b). $n(A \backslash B) = n(A) - n(A \cap B)$
+
+    c). If $U$ is a universal set, then $n(A^c) = n(U) - n(A)$
+    d). Suppose $A$ and $B$ are finite then $A \times B$ is finite and $n(A \times B) = n(A) \times n(B)$
+\end{lemma}
+
+\begin{theorem}[Inclusion exclusion-principle]
+    Suppose $A$ and $B$ are finite sets. Then $A \cap B$ and $A \cup B$ are finite and $n(A \cup B) = n(A) + n(B) - n(A \cap B)$
+
+    This can be generalized to any finite number of finite sets e.g. if $A$, $B$ and $C$ are finite sets then $A \cup B \cup C$ is finite and $n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(A \cap C) + n(A \cap B \cap C)$
+\end{theorem}
+
+Example:
+
+Suppose in form $3$ class, $30$ students take maths and $35$ take English, while $20$ take both subjects. Find the number that study.
+
+a. only maths \\
+b. Maths and English\\
+c. exactly one of the two subjects
+
+Solution:
+
+Let $M$ be a list of students taking Maths and for $E$ for English.
+
+a).\begin{align*}
+    n(M \backslash E) & = n(M) - n(E) \\
+                      & = 30 - 20     \\
+                      & =10           \\
+\end{align*}
+
+b). \begin{align*}
+    n(M or E) & = n(M \cup E)               \\
+              & = n(M) + n(E) - n(M \cap E) \\
+              & = 30 + 35 - 20              \\
+              & = 25                        \\
+\end{align*}
+
+c). \begin{align*}
+    n(M \oplus E) & = n[(M \backslash E) \cup (E \backslash M)]   \\
+                  & = n(M \backslash E) + n(E \backslash M)       \\
+                  & = [n(M) - n(M \cap N)] + [n(E) - n(M \cap E)] \\
+                  & = 30 - 20 + 35 - 20                           \\
+                  & = 25                                          \\
+\end{align*}
+
+\subsection{Classes of Sets}
+
+Member of a set can be sets themselves. To help in clarifying these situations we usually use the term \underline{class} or \underline{family} for such a set. The words subclass and \underline{subfamily} have meanings.
+
+Analogous to subset
+
+e.g.
+
+let $S = \{1,2,3,4\}$ let $W$ be the class of subsets of $S$ which contain exactly three elements of $S$. Then $W = [\{1,2,3\}, \{1,2,4\}, \{1,3,4\}, \{2,3,4\}]$
+
+
+\subsection{Power set}
+
+Consider any set $A$ the power set of $A$, denoted by $P(A)$ is the class of all subsets of $A$.
+
+In general of $A$ is finite, so is $P(A)$.
+
+The number of elements in $P(A)$ is $2^{n(A)}$ i.e, $n(P(A)) = 2^{n(A)}$
+
+
+e.g.
+
+Let $A = \{a,b,c\}$. Then $P(A) = \{a,b,c\}, \{a,b\} , \{b, c\}, \{a,c\}, \{a,c\}, \{a\}, \{b\}, \{c\}, \{\emptyset\}$
+
+\subsection{Partitions}
+
+Let $X$ be a non-empty set. A partition of $X$ is a subdivision of $X$ into non overlapping, non empty subsets. The subsets in a partition are called cells.
+
+\begin{center}
+    [[[[[[[[[[[[[[[[Image image image]]]]]]]]]]]]]]]]
+\end{center}
+
+E.g. If $X = \{1,2,3, \ldots\}$ Then $W = [\{1,2,3,4\}, \{8,7\}]$ is a partition of $X \{5,6,7\}$
